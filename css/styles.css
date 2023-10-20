@@ -10,7 +10,7 @@ h1 {
 
 .header {
   /* header  */
-  background-image: url(img\carteleria\nicolinoheader.jpg); /* dandole una imagen de fondo al header*/
+  background-image: url(..\img\carteleria\nicolinoheader.jpg); /* dandole una imagen de fondo al header*/
   min-height: 35rem; /* dandole un alto minimo*/
   padding: 1rem 1rem 0;
   position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
@@ -167,7 +167,7 @@ h1 {
 }
 
 .imagen-central {
-  background-image: url(img\carteleria\oficinaVistaHorizonte.jpg);
+  background-image: url(..\img\carteleria\oficinaVistaHorizonte.jpg);
   height: 200px;
   background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
   background-repeat: no-repeat; /* Evitar la repetición de la imagen */
