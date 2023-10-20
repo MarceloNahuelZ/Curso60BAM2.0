@@ -79,6 +79,7 @@ h1 {
   display: flex; /* habilita flex */
   margin-left: 15rem; /* margenes */
   margin-top: 15rem;
+  font-size: 2.4rem;
 }
 
 .titulo-negro {
@@ -256,9 +257,21 @@ h1 {
   }
   /* Cambiar el tamaño del encabezado principal */
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     display: flex;
+    margin-left: 20px;
   }
+  .header {
+    /* header  */
+    background-image: url(../img/carteleria/nicolinoheader.jpg); /* dandole una imagen de fondo al header*/
+    min-height: 25rem; /* dandole un alto minimo*/
+    padding: 1rem 1rem 0;
+    position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
+    background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center; /* centrando la imagen */
+  }
+
   /* Ajustar márgenes en la barra de navegación */
   .barra {
     margin: 10px;
