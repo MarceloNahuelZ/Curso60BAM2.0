@@ -1,4 +1,4 @@
-@import url(/css/formulario.css);
+@import url(css/formulario.css);
 
 html {
   font-size: 62.5%; /* paul irish ... con esta configuracion logramos que los  rem sean equivalentes 1rem 10px */
