@@ -1,5 +1,3 @@
-@import url(css/formulario.css);
-
 html {
   font-size: 62.5%; /* paul irish ... con esta configuracion logramos que los  rem sean equivalentes 1rem 10px */
   font-family: "Lato", sans-serif;
@@ -369,4 +367,58 @@ main {
   75% {
     transform: translate(-20%, 0);
   }
+}
+
+/* --------------------------------- css formulario */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-contacto,
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+}
+
+.contenedor-seccion {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+picture {
+  text-align: center; /* Centra horizontalmente */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 2rem 0;
+}
+
+p {
+  font-size: 1.4rem;
+  color: gray;
+  margin: 2rem 0 0 0;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 4px;
+}
+
+/* Aplica estilos a los input excepto los de tipo radio y submit */
+input:not([type="submit"]):not([type="radio"]) {
+  padding: 0.5rem;
+  display: block;
+  text-align: left;
+  width: 98%;
+  background-color: white;
+  border: 1px solid;
 }
