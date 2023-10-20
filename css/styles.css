@@ -217,6 +217,10 @@ h1 {
   .contenido-de-central .titulo-contacto {
     font-size: 2rem;
   }
+  .iconos-nosotros {
+    display: block;
+  }
+
   .iconos-nosotros h3 {
     font-size: 1.8rem;
   }
@@ -243,6 +247,9 @@ h1 {
 
   .iconos-caracteristicas li {
     padding: 15px;
+  }
+  .titulo-negro {
+    font-size: 2rem;
   }
 
   .contenedor-anuncios {
@@ -410,7 +417,9 @@ picture {
   align-items: center; /* Centra verticalmente */
   margin: 2rem 0;
 }
-
+picture img {
+  border-radius: 20px;
+}
 textarea {
   width: 100%;
   box-sizing: border-box;
