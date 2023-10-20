@@ -207,6 +207,7 @@ h1 {
   /* contenedor de copy*/
   color: #ffffff;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 /*------------------------------querys ------------- */
@@ -397,6 +398,11 @@ picture {
   margin: 2rem 0;
 }
 
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 p {
   font-size: 1.7rem;
   color: gray;
@@ -423,4 +429,43 @@ input:not([type="submit"]):not([type="radio"]) {
   width: 98%;
   background-color: white;
   border: 1px solid;
+}
+
+/* Estilos para dispositivos más pequeños (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Reducir el tamaño de fuente en el formulario para dispositivos móviles */
+  .titulo-contacto,
+  h2 {
+    font-size: 2rem;
+  }
+
+  .contenedor-seccion {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  /* Alinear y reducir el espacio entre los elementos del formulario */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input:not([type="submit"]):not([type="radio"]),
+  textarea {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+
+  /* Alinear el botón Enviar al centro */
+  .botones-contenido {
+    width: 100%;
+    margin: 12px 0;
+  }
 }
