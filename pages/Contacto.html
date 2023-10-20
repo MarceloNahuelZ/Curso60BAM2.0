@@ -10,43 +10,89 @@
         href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Krub:ital,wght@0,700;1,400&family=Lato:ital,wght@1,300&family=Open+Sans:wght@400;700&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,400;0,700;1,600&family=Yellowtail&display=swap"
         rel="stylesheet">
     <title>Nicolino Propiedades</title> <!-- titulo de pestaña -->
-    <link rel="stylesheet" href="/css/reset.css"> <!-- reset css para sacar las medidas y mods predeterminadas -->
-    <link rel="preload" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/styles.css"> <!-- link a pagina de estilos   -->
+    <link rel="stylesheet" href="../css/reset.css"> <!-- reset css para sacar las medidas y mods predeterminadas -->
+    <link rel="preload" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- link a pagina de estilos   -->
 </head>
 
 <body>
     <header class="headerPages"><!--header-->
         <div class="contenedor contenido-header"><!--contenido del header-->
             <div class="barra"><!--contenedor de la barra de navegacion-->
-                <a href="/"><!--ancla para que cuando hagan click en la imagen te lleve a la pagina principal-->
-                    <img src="/img/carteleria/nicolinologo2.png.jpg" alt="logotipo de Nicolino"><!--img logoticpo-->
+                <a href="../index.html"><!--ancla para que cuando hagan click en la imagen te lleve a la pagina principal-->
+                    <img src="../img/carteleria/nicolinologo2.jpg" alt="logotipo de Nicolino"><!--img logoticpo-->
                 </a>
                 <nav class="navegacion"><!--barra de navegacion-->
-                    <a href="pages/Nosotros.html">Nosotros</a>
-                    <a href="pages/Anuncios.html">Anuncios</a>
-                    <a href="pages/Contacto.html">Contacto</a>
+                    <a href="#">Contacto</a>
+                    <a href="/pages/Anuncios.html">Anuncios</a>
+                    <a href="/pages/Nosotros.html">Nosotros</a>
                 </nav>
             </div>
         </div>
     </header>
-    <div>
-        <br>
-    </div>
+    <main class="contenedor-seccion"><!--seccion de formulario-->
+        <h1 class="titulo-contacto">Contacto</h1>
+        <picture>
+            <img src="../img/carteleria/nicolinocartel.jpg" alt="Cartel Nicolino">
+        </picture>
+        <h2>Llene el formulario de contacto</h2>
+        <form action="" class="fomulario">
+            <fieldset>
+                <Legend>Informacion Personal</Legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="nombre@nombre.com.ar" id="email">
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" placeholder="Tu Telefono" id="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser contactado</p>
+
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Telefono:</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">Email:</label>
+                    <input name="contacto" type="radio" value="Email" id="contactar-email">
+                </div>
+
+                <p>Si eligio telefono elija la fecha y la hora para ser contactado </p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="botones-contenido">
+
+        </form>
+
+    </main>
     <footer class="footer seccion"> <!-- seccion footer con nav bar y cr -->
         <div class="contenedor contenedor-footer">
             <nav class="navegacion"><!--barra de navegacion footer-->
-                <a href="pages/Nosotros.html">Nosotros</a>
-                <a href="pages/Anuncios.html">Anuncios</a>
-                <a href="pages/Contacto.html">Contacto</a>
+                <a href="#">Contacto</a>
+                <a href="../Anuncios.html">Anuncios</a>
+                <a href="../Nosotros.html">Nosotros</a>
             </nav>
 
         </div>
         <p class="copyrigth">Todos los derechos Reservados 2023 &COPY;</p><!--derechos de autor-->
     </footer>
-
-
-
 </body>
 
 </html>

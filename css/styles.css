@@ -1,3 +1,5 @@
+@import url(/css/formulario.css);
+
 html {
   font-size: 62.5%; /* paul irish ... con esta configuracion logramos que los  rem sean equivalentes 1rem 10px */
   font-family: "Lato", sans-serif;
@@ -32,8 +34,7 @@ h1 {
 }
 
 .edificio1 {
-  width: 250px;
-  height: 164px;
+  width: 270px;
 }
 
 .edificio2 {
@@ -88,7 +89,7 @@ h1 {
   text-align: center;
   padding: 10px;
   margin-bottom: 45px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .iconos-nosotros {
@@ -97,12 +98,12 @@ h1 {
 }
 
 .iconos-nosotros h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .iconos-nosotros p {
   padding: 20px;
-  font-size: 14px;
+  font-size: 1.8rem;
 }
 
 .icono,
@@ -113,7 +114,7 @@ h1 {
 
 .titulo-seccion {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -124,12 +125,12 @@ h1 {
 /* Establecer los elementos .contenedor-anuncios como un flex container */
 .contenedor-anuncios {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .contenido-anuncio {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -184,7 +185,7 @@ h1 {
 }
 
 .contenido-de-central h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-style: oblique;
   text-shadow: 3px 4px 5px rgba(255, 255, 255, 1);
 }
@@ -215,10 +216,19 @@ h1 {
   .contenido-de-central .titulo-contacto {
     font-size: 2rem;
   }
+  .iconos-nosotros h3 {
+    font-size: 1.8rem;
+  }
+
+  .iconos-nosotros p {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
 
   .anuncio picture {
     display: block; /* Hacer que la imagen sea un bloque para ocupar todo el ancho disponible */
     max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que su contenedor */
+    height: auto;
   }
 
   .anuncio picture img {
