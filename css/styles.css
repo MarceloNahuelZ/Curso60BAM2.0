@@ -121,6 +121,8 @@ h1 {
 .anuncio {
   background-color: #e6e7e4;
   border: black solid 1px;
+  display: block;
+  height: auto;
 }
 /* Establecer los elementos .contenedor-anuncios como un flex container */
 .contenedor-anuncios {
@@ -412,23 +414,14 @@ h2 {
 
 picture {
   text-align: center; /* Centra horizontalmente */
-
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   margin: 2rem 0;
 }
-picture img {
-  border-radius: 20px;
-}
+
 textarea {
   width: 100%;
   box-sizing: border-box;
-}
-
-p {
-  font-size: 1.7rem;
-  color: gray;
-  margin: 2rem 0 0 0;
 }
 
 legend {
