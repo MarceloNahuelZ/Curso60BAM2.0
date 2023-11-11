@@ -1,0 +1,257 @@
+html {
+  font-size: 62.5%; /* paul irish ... con esta configuracion logramos que los  rem sean equivalen*/
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: rgb(238, 237, 235);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(238, 237, 235);
+}
+
+main {
+  margin-bottom: 86px;
+}
+
+.titulo-negro {
+  position: relative;
+  animation: bounce 20s infinite;
+}
+
+.header {
+  /* header  */
+  background-image: url(../img/carteleria/nicolinoheader.jpg); /* dandole una imagen de fondo al */
+  min-height: 35rem; /* dandole un alto minimo*/
+  padding: 1rem 1rem 0;
+  position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
+  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+  background-position: center; /* centrando la imagen */
+}
+
+.headerPages {
+  /* header  */
+  background-image: none;
+  background-color: #333333;
+  min-height: 10rem; /* dandole un alto minimo*/
+  padding: 1rem 1rem 0;
+  position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
+  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+  background-position: center; /* centrando la imagen */
+}
+
+.edificio1 {
+  width: 270px;
+}
+
+.edificio2 {
+  width: 250px;
+}
+
+.barra img {
+  /* clase barra moficando img*/
+  margin-top: -10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.barra {
+  /* barra contenedora */
+  display: flex; /* flex */
+  justify-content: space-between; /* espacio entre ambas */
+  margin-right: 10rem;
+  margin-left: 15rem;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.navegacion a {
+  /* Estilos normales */
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  font-weight: bolder;
+  margin-right: 35px;
+  transition: background-color 0.3s, color 0.3s; /* Agregar transición suave */
+}
+
+.navegacion a:hover {
+  /* Estilos cuando el cursor está encima */
+  background-color: #72816f; /* Cambia el fondo al color deseado */
+  color: #ffffff; /* Cambia el color del texto */
+}
+
+.contenedor h1 {
+  /* clase contenedor selector de titulo h1 */
+  display: flex; /* habilita flex */
+  margin-left: 15rem; /* margenes */
+  margin-top: 15rem;
+  font-size: 2.4rem;
+}
+
+.titulo-negro {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 45px;
+  font-size: 3rem;
+}
+
+.iconos-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-nosotros h3 {
+  font-size: 2.5rem;
+}
+
+.iconos-nosotros p {
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.icono,
+.h3,
+.p {
+  text-align: center;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.anuncio {
+  background-color: #e6e7e4;
+  border: black solid 1px;
+  display: block;
+  height: auto;
+}
+/* Establecer los elementos .contenedor-anuncios como un flex container */
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contenido-anuncio {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.iconos-caracteristicas {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.iconos-caracteristicas p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones {
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.botones-contenido {
+  display: inline-block;
+  margin: 12px;
+  background-color: #72816f;
+  color: #dbd9d9;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+}
+
+.botones-contenido-imagenC:hover {
+  background-color: #c0b18f;
+  color: black;
+}
+
+/** boton de mobile menu **/
+.barra .mobile-menu img {
+  width: 40px;
+}
+
+.botones-contenido-imagenC {
+  display: inline-block;
+  margin: 12px;
+  background-color: #72816f;
+  color: #dbd9d9;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.botones-contenido:hover {
+  background-color: #c0b18f;
+  color: black;
+}
+
+.imagen-central {
+  background-image: url(../img/carteleria/oficinaVistaHorizonte.jpg);
+  height: 200px;
+  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
+  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+  background-position: center; /* centrando la imagen */
+  margin-top: 10px;
+  padding: 1rem 1rem 0;
+  margin-bottom: 20px;
+}
+
+.ver-mas {
+  /* boton bajo casas y departamentos */
+  text-align: right;
+  margin-top: 10px;
+}
+
+.contenido-de-central h3 {
+  font-size: 3rem;
+  font-style: oblique;
+  text-shadow: 3px 4px 5px rgba(255, 255, 255, 1);
+}
+
+.contenido-de-central {
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer,
+.contenedor-footer {
+  /*seleccion de clase footer y contenedor de footer  */
+  background-color: #333333;
+  padding: 0.5rem;
+}
+
+.footer p {
+  /* contenedor de copy*/
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,67 @@
+.tituloPaginaNosotros {
+  color: black;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.img-Nosotros {
+  border-radius: 20px;
+  max-width: 100%; /* Ancho máximo para que la imagen se ajuste de manera proporcional */
+  height: auto; /* Mantener la proporción de aspecto original de la imagen */
+}
+.imagen {
+  display: flex;
+  justify-content: right;
+  grid-column: 1;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Crea dos columnas con el mismo ancho */
+  grid-gap: 20px; /* Espacio entre las columnas */
+}
+
+.texto-nosotros blockquote {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.texto-nosotros {
+  font-size: 1.6rem; /* Tamaño de fuente predeterminado para el texto */
+  text-align: center; /* Texto centrado por defecto */
+  max-width: 70%;
+  line-height: 2;
+  padding: 20px;
+}
+
+main {
+  margin-bottom: 86px;
+}
+.titulo-negro {
+  position: relative;
+  animation: bounce 20s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20%, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-20%, 0);
+  }
+}

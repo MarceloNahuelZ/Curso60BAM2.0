@@ -1,0 +1,63 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cartel-contacto {
+  border-radius: 3%;
+}
+
+.tituloPaginaNosotros {
+  padding: 20px;
+}
+
+.titulo-contacto,
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.contenedor-seccion {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.pic-cartel-contacto {
+  display: block;
+  text-align: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 2rem 0;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+legend {
+  font-size: 2rem;
+  padding: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 4px;
+  font-size: 1.3rem;
+}
+
+/* Aplica estilos a los input excepto los de tipo radio y submit */
+input:not([type="submit"]):not([type="radio"]) {
+  padding: 0.5rem;
+  display: block;
+  text-align: left;
+  width: 98%;
+  background-color: white;
+  border: 1px solid;
+}

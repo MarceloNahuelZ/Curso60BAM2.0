@@ -1,226 +1,18 @@
-html {
-  font-size: 62.5%; /* paul irish ... con esta configuracion logramos que los  rem sean equivalentes 1rem 10px */
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  background-color: rgb(238, 237, 235);
-}
-
-h1 {
-  color: #ffffff;
-}
-
-.header {
-  /* header  */
-  background-image: url(../img/carteleria/nicolinoheader.jpg); /* dandole una imagen de fondo al header*/
-  min-height: 35rem; /* dandole un alto minimo*/
-  padding: 1rem 1rem 0;
-  position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
-  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
-  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-  background-position: center; /* centrando la imagen */
-}
-
-.headerPages {
-  /* header  */
-  background-image: none;
-  background-color: #333333;
-  min-height: 10rem; /* dandole un alto minimo*/
-  padding: 1rem 1rem 0;
-  position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
-  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
-  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-  background-position: center; /* centrando la imagen */
-}
-
-.edificio1 {
-  width: 270px;
-}
-
-.edificio2 {
-  width: 250px;
-}
-
-.barra img {
-  /* clase barra moficando img*/
-  margin-top: -10px;
-  border-radius: 10px;
-  width: 250px;
-}
-
-.barra {
-  /* barra contenedora */
-  display: flex; /* flex */
-  justify-content: space-between; /* espacio entre ambas */
-  margin-right: 10rem;
-  margin-left: 15rem;
-  margin-top: 15px;
-}
-
-.navegacion a {
-  /* Estilos normales */
-  border-radius: 8px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.3rem;
-  padding: 10px;
-  font-weight: bolder;
-  margin-right: 35px;
-  transition: background-color 0.3s, color 0.3s; /* Agregar transición suave */
-}
-
-.navegacion a:hover {
-  /* Estilos cuando el cursor está encima */
-  background-color: #72816f; /* Cambia el fondo al color deseado */
-  color: #ffffff; /* Cambia el color del texto */
-}
-
-.contenedor h1 {
-  /* clase contenedor selector de titulo h1 */
-  display: flex; /* habilita flex */
-  margin-left: 15rem; /* margenes */
-  margin-top: 15rem;
-  font-size: 2.4rem;
-}
-
-.titulo-negro {
-  display: flex;
-  justify-content: center;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 45px;
-  font-size: 3rem;
-}
-
-.iconos-nosotros {
-  display: flex;
-  justify-content: center;
-}
-
-.iconos-nosotros h3 {
-  font-size: 2.5rem;
-}
-
-.iconos-nosotros p {
-  padding: 20px;
-  font-size: 1.8rem;
-}
-
-.icono,
-.h3,
-.p {
-  text-align: center;
-}
-
-.titulo-seccion {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-}
-
-.anuncio {
-  background-color: #e6e7e4;
-  border: black solid 1px;
-  display: block;
-  height: auto;
-}
-/* Establecer los elementos .contenedor-anuncios como un flex container */
-.contenedor-anuncios {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.contenido-anuncio {
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.iconos-caracteristicas {
-  display: flex;
-  list-style: none;
-  padding: 5px;
-  justify-content: space-around;
-}
-
-.iconos-caracteristicas p {
-  display: flex;
-  justify-content: space-around;
-}
-
-.botones {
-  text-align: center; /* Centrar el contenido horizontalmente */
-}
-
-.botones-contenido {
-  display: inline-block;
-  margin: 12px;
-  background-color: #72816f;
-  color: #dbd9d9;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 3px;
-  text-decoration: none;
-  text-align: center;
-  margin-left: auto;
-}
-
-.botones-contenido:hover {
-  background-color: #c0b18f;
-  color: black;
-}
-
-.imagen-central {
-  background-image: url(../img/carteleria/oficinaVistaHorizonte.jpg);
-  height: 200px;
-  background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
-  background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-  background-position: center; /* centrando la imagen */
-  margin-top: 10px;
-  padding: 1rem 1rem 0;
-  margin-bottom: 20px;
-}
-
-.ver-mas {
-  /* boton bajo casas y departamentos */
-  text-align: right;
-  margin-top: 10px;
-}
-
-.contenido-de-central h3 {
-  font-size: 3rem;
-  font-style: oblique;
-  text-shadow: 3px 4px 5px rgba(255, 255, 255, 1);
-}
-
-.contenido-de-central {
-  margin-top: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer,
-.contenedor-footer {
-  /*seleccion de clase footer y contenedor de footer  */
-  background-color: #333333;
-  padding: 0.5rem;
-}
-
-.footer p {
-  /* contenedor de copy*/
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.4rem;
-}
+@import url(../css/contactostyle.css);
+@import url(../css/nosotrosstyle.css);
+@import url(../css/indexstyle.css);
 
 /*------------------------------querys ------------- */
 
 @media screen and (max-width: 768px) {
+  /* Estilos para dispositivos con un ancho de pantalla de 768px o menos */
+
+  /* Estilos para la sección 'contenido-de-central' */
   .contenido-de-central .titulo-contacto {
     font-size: 2rem;
   }
+
+  /* Estilos para la sección 'iconos-nosotros' */
   .iconos-nosotros {
     display: block;
   }
@@ -234,9 +26,10 @@ h1 {
     font-size: 1.5rem;
   }
 
+  /* Estilos para las imágenes dentro de '.anuncio picture' */
   .anuncio picture {
-    display: block; /* Hacer que la imagen sea un bloque para ocupar todo el ancho disponible */
-    max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que su contenedor */
+    display: block;
+    max-width: 100%;
     height: auto;
   }
 
@@ -244,6 +37,7 @@ h1 {
     padding: 20px;
   }
 
+  /* Estilos para '.iconos-caracteristicas' dentro de '.contenido-anuncio' */
   .contenido-anuncio .iconos-caracteristicas {
     display: flex;
     justify-content: center;
@@ -252,133 +46,127 @@ h1 {
   .iconos-caracteristicas li {
     padding: 15px;
   }
+
+  /* Estilos para el título '.titulo-negro' */
   .titulo-negro {
     font-size: 2rem;
+    position: relative;
+    animation: bounce 20s infinite;
   }
 
+  /* Estilos para '.contenedor-anuncios' */
   .contenedor-anuncios {
-    display: block; /* Cambiar el valor de display a "block" para que los anuncios se muestren uno debajo del otro */
+    display: block;
     align-items: center;
   }
 
+  /* Estilos para '.anuncio' */
   .anuncio {
-    margin-bottom: 20px; /* Añadir un margen inferior para separar los anuncios */
-    text-align: center; /* Alinear el contenido de .anuncio al centro */
+    margin-bottom: 20px;
+    text-align: center;
     border: none;
   }
-  /* Cambiar el tamaño del encabezado principal */
+
+  /* Estilos para el título en '.header' */
   .header h1 {
     font-size: 1.3rem;
     display: flex;
     margin-left: 20px;
   }
+
+  /* Estilos para '.header' (el encabezado) */
   .header {
-    /* header  */
-    background-image: url(../img/carteleria/nicolinoheader.jpg); /* dandole una imagen de fondo al header*/
-    min-height: 25rem; /* dandole un alto minimo*/
+    background-image: url(../img/carteleria/nicolinoheader.jpg);
+    min-height: 25rem;
     padding: 1rem 1rem 0;
-    position: relative; /* posicion relativa ocupa el espacio que le corresponde  */
-    background-size: cover; /* Ajustar la imagen para que cubra todo el elemento */
-    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
-    background-position: center; /* centrando la imagen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  /* Ajustar márgenes en la barra de navegación */
+  /* Estilos para la barra de navegación '.barra' */
   .barra {
     margin: 10px;
     font-size: 15px;
   }
 
-  /* Cambiar el tamaño del logotipo en la barra de navegación */
+  /* Estilos para el logotipo en '.barra img' */
   .barra img {
     width: 150px;
   }
 
-  /* Modificar la disposición de la navegación en el encabezado */
+  /* Estilos para la navegación en '.navegacion' */
   .navegacion {
-    flex-direction: block; /* Apilar los elementos verticalmente */
+    flex-direction: block;
   }
 
-  /* Cambiar el tamaño de fuente en los elementos de navegación */
+  /* Estilos para los elementos de navegación en '.navegacion a' */
   .navegacion a {
     font-size: 10px;
   }
-}
 
-.tituloPaginaNosotros {
-  color: black;
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 3rem;
-}
-
-.img-Nosotros {
-  border-radius: 20px;
-  max-width: 100%; /* Ancho máximo para que la imagen se ajuste de manera proporcional */
-  height: auto; /* Mantener la proporción de aspecto original de la imagen */
-}
-.imagen {
-  display: flex;
-  justify-content: right;
-  grid-column: 1;
-  align-items: center;
-  padding: 20px;
-}
-
-.contenido-nosotros {
-  display: grid;
-  grid-template-columns: repeat(
-    2,
-    1fr
-  ); /* Crea dos columnas con el mismo ancho */
-  grid-gap: 20px; /* Espacio entre las columnas */
-}
-
-.texto-nosotros blockquote {
-  font-weight: bolder;
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 1rem 0 1rem 0;
-}
-
-.texto-nosotros {
-  font-size: 1.6rem; /* Tamaño de fuente predeterminado para el texto */
-  text-align: center; /* Texto centrado por defecto */
-  max-width: 70%;
-  line-height: 2;
-  padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
+  /* Estilos para la sección de 'Nosotros' */
   .contenido-nosotros {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+    grid-template-columns: 1fr;
   }
 
+  /* Estilos para las imágenes en '.imagen' */
   .imagen {
     max-width: 100%;
     height: auto;
     padding: 20px;
   }
 
+  /* Estilos para el texto en '.texto-nosotros' */
   .texto-nosotros {
     font-size: 2rem;
     max-width: 100%;
     height: auto;
   }
+
+  /* Estilos para '.contenedor-seccion' */
+  .contenedor-seccion {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Estilos para el formulario '.formulario' */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos para las etiquetas 'label' */
+  label {
+    font-size: 1.2rem;
+  }
+
+  /* Estilos para los campos de entrada y textarea */
+  input:not([type="submit"]):not([type="radio"]),
+  textarea {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+
+  /* Estilos para el botón 'Enviar' */
+  .botones-contenido {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  /* Estilos para los títulos 'titulo-contacto' y 'h2' */
+  .titulo-contacto,
+  h2 {
+    font-size: 2rem;
+  }
 }
 
-body {
-  background-color: rgb(238, 237, 235);
-}
-main {
-  margin-bottom: 86px;
-}
-
-.titulo-negro {
-  position: relative;
-  animation: bounce 20s infinite;
-}
-
+/* Animación 'bounce' para '.titulo-negro' */
 @keyframes bounce {
   0%,
   100% {
@@ -395,99 +183,55 @@ main {
   }
 }
 
-/* --------------------------------- css formulario */
-img {
-  max-width: 100%;
+.close {
+  position: absolute;
+}
+
+.modal {
+  display: none;
+
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-top: 10px;
+  width: 40%;
   height: auto;
-  border: 1px solid black;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
-.cartel-contacto {
-  border-radius: 3%;
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+#modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-.titulo-contacto,
-h2 {
-  text-align: center;
-  color: black;
-  font-size: 3rem;
-}
-
-.contenedor-seccion {
-  display: block;
-  max-width: 50%;
-  margin: 0 auto;
-}
-
-picture {
-  text-align: center; /* Centra horizontalmente */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  margin: 2rem 0;
-}
-
-textarea {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-legend {
-  font-size: 2rem;
-}
-
-label {
+.boton-cerrar-modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-  padding: 4px;
-  font-size: 1.3rem;
 }
 
-/* Aplica estilos a los input excepto los de tipo radio y submit */
-input:not([type="submit"]):not([type="radio"]) {
-  padding: 0.5rem;
-  display: block;
-  text-align: left;
-  width: 98%;
-  background-color: white;
-  border: 1px solid;
-}
-
-/* Estilos para dispositivos más pequeños (max-width: 768px) */
-@media screen and (max-width: 768px) {
-  /* Reducir el tamaño de fuente en el formulario para dispositivos móviles */
-  .titulo-contacto,
-  h2 {
-    font-size: 2rem;
-  }
-
-  .contenedor-seccion {
-    display: block;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  /* Alinear y reducir el espacio entre los elementos del formulario */
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  label {
-    font-size: 1.2rem;
-  }
-
-  input:not([type="submit"]):not([type="radio"]),
-  textarea {
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    width: 95%;
-  }
-
-  /* Alinear el botón Enviar al centro */
-  .botones-contenido {
-    width: 100%;
-    margin: 12px 0;
-  }
+.boton-cerrar-modal .close:hover,
+.boton-cerrar-modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

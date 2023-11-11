@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ES"> <!-- lenguaje español  -->
+<html lang="ES">
 
 <head>
     <meta charset="UTF-8">
@@ -10,38 +10,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Krub:ital,wght@0,700;1,400&family=Lato:ital,wght@1,300&family=Open+Sans:wght@400;700&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,400;0,700;1,600&family=Yellowtail&display=swap"
         rel="stylesheet">
-    <title>Nicolino Propiedades</title> <!-- titulo de pestaña -->
-    <link rel="stylesheet" href="css/reset.css"> <!-- reset css para sacar las medidas y mods predeterminadas -->
-    <link rel="stylesheet" href="css/styles.css"> <!-- link a pagina de estilos   -->
+    <title>Nicolino Propiedades</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header "><!--header-->
-        <div class="contenedor contenido-header"><!--contenido del header-->
-            <div class="barra"><!--contenedor de la barra de navegacion-->
-                <a href="#"><!--ancla para que cuando hagan click en la imagen te lleve a la pagina principal-->
-                    <img src="img/carteleria/nicolinologo2.jpg" alt="logotipo de Nicolino"><!--img logoticpo-->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="#">
+                    <img src="img/carteleria/nicolinologo2.jpg" alt="logotipo de Nicolino">
                 </a>
-                <nav class="navegacion"><!--barra de navegacion-->
+                <nav class="navegacion">
                     <a href="pages\Nosotros.html">Nosotros</a>
-                    <a href="pages\Anuncios.html">Anuncios</a>
+
                     <a href="pages\Contacto.html">Contacto</a>
                 </nav>
             </div>
-            <h1>Venta de Casas y Departamentos <br>
-                Exclusivos</h1><!--titulo principal-->
+            <h1>Venta de Casas y Departamentos <br> Exclusivos</h1>
         </div>
-    </header><!--/header-->
+    </header>
+
+
+    <div class="modal" id="modal-container">
+        <div class="modal-content" id="modal-contenido">
+            <button class="close" id="boton-cerrar-modal">&times;</button>
+            <img />
+            <p></p>
+        </div>
+    </div>
     <main class="contenedor seccion">
         <h2 class="titulo-negro">Mas sobre Nosotros</h2>
         <div class="iconos-nosotros">
-            <div class="icono"> <!--  conjunto de iconos centrales  -->
+            <div class="icono">
                 <img src="icons\candado.png" alt="candado seguridad">
                 <h3>Seguridad</h3>
                 <p>En nuestra empresa, la seguridad es primordial. Garantizamos <br> la protección de tu inversión al
                     comprar una casa con nosotros.<br>
                     Nuestro compromiso es brindarte tranquilidad y <br> confianza en cada paso del proceso de compra.
-                <p>
+                </p>
             </div>
             <div class="icono">
                 <img src="icons\moneda.png" alt="moneda de plata">
@@ -62,19 +70,18 @@
         </div>
     </main>
 
-    <section class="seccion contenedor "> <!-- seccion de casas y departamentos -->
+    <section class="seccion contenedor">
         <h2 class="titulo-seccion">Casas y Departamentos</h2>
 
         <div class="contenedor-anuncios">
-            <div class="anuncio"> <!-- contenedores de info de casas -->
+            <div class="anuncio">
                 <picture>
-                    <img src="img\ed1\e1.jpg" alt="edificio1" width="250px">
+                    <img src="img\ed1\edificio-1.jpg" alt="edificio1" width="250px">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Departamento a estrenar</h3>
-                    <p>Hermoso departamento amplio y luminioso <br> amoblado y con una increible vista
-                        <br>Se aceptan mascotas
-                    </p>
+                    <p>Hermoso departamento amplio y luminioso <br> amoblado y con una increíble vista <br>Se aceptan
+                        mascotas</p>
                     <p class="precio">130.000 USD</p>
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -90,20 +97,20 @@
                             <p>1</p>
                         </li>
                     </ul>
-                    <div class="botones"> <!-- botones  -->
-                        <a href="#" class="botones-contenido" type="submit">VER PROPIEDAD</a>
+                    <div class="botones">
+                        <a href="#" class="botones-contenido" data-target="1">VER PROPIEDAD</a>
                     </div>
                 </div>
             </div>
             <div class="anuncio">
                 <picture>
-                    <img class="edificio1" src="img\ed2\ed21.jpg" alt="edificio1">
+                    <img class="edificio1" src="img\ed2/edificio-2.jpg" alt="edificio1">
                 </picture>
                 <div class="contenido-anuncio">
-                    <h3>Mono ambiente de lujo </h3> <!-- parrafos de descripcion -->
+                    <h3>Mono ambiente de lujo</h3>
                     <p>Departamento en venta. Espacioso y luminoso. <br>
                         Ubicación privilegiada. Ideal para tu comodidad. <br>
-                        Con Yacuzzi!
+                        Con Jacuzzi!</p>
                     <p class="precio">45.000 USD</p>
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -120,20 +127,18 @@
                         </li>
                     </ul>
                     <div class="botones">
-                        <a href="#" class="botones-contenido" type="submit">VER PROPIEDAD</a>
+                        <a href="#" class="botones-contenido" data-target="2">VER PROPIEDAD</a>
                     </div>
                 </div>
             </div>
             <div class="anuncio">
                 <picture>
-                    <img class="edificio2" src="img\ed3\ed31.jpg" alt="edificio1">
+                    <img class="edificio2" src="img\ed3\edificio-3.jpg" alt="edificio1">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Duplex Luminoso</h3>
                     <p>Dúplex de ensueño. Diseño exclusivo. <br>
-                        Espacios amplios y luminosos. <br> ¡Tu hogar perfecto te espera!
-                    </p>
-
+                        Espacios amplios y luminosos. <br> ¡Tu hogar perfecto te espera!</p>
                     <p class="precio">85.000 USD</p>
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -150,7 +155,7 @@
                         </li>
                     </ul>
                     <div class="botones">
-                        <a href="#" class="botones-contenido" type="submit">VER PROPIEDAD</a>
+                        <a href="#" class="botones-contenido" data-target="3">VER PROPIEDAD</a>
                     </div>
                 </div>
             </div>
@@ -162,21 +167,21 @@
     <section class="imagen-central">
         <div class="contenido-de-central">
             <h3 class="titulo-contacto">Encuentra la casa de tus sueños</h3>
-            <a class="botones-contenido" href="pages\Contacto.html">Contactanos</a>
+            <a class="botones-contenido-imagenC" href="pages\Contacto.html">Contactanos</a>
         </div>
     </section>
 
-    <footer class="footer seccion"> <!-- seccion footer con nav bar y cr -->
+    <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion"><!--barra de navegacion footer-->
+            <nav class="navegacion">
                 <a href="pages\Nosotros.html">Nosotros</a>
-                <a href="pages\Anuncios.html">Anuncios</a>
+
                 <a href="pages\Contacto.html">Contacto</a>
             </nav>
-
         </div>
-        <p class="copyrigth">Todos los derechos Reservados 2023 &COPY;</p><!--derechos de autor-->
+        <p class="copyright">Todos los derechos Reservados 2023 &COPY;</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
